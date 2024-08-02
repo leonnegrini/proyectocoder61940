@@ -1,0 +1,832 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* HTML */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* INDEX */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Clases Reutilizables */
+
+.noMarginText {
+    margin: 0;
+}
+
+.bgleon {
+    background-color: #0d0d0d;
+}
+
+.bgLeon:focus {
+    background-color: #0d0d0d;
+}
+
+.linksNav:focus {
+    opacity: .75;
+}
+
+.listSideBar:focus {
+    opacity: .75;
+}
+
+.linksNav:hover {
+    border-bottom: 3px solid;
+    border-bottom-color: lime;
+    opacity: .75;
+    padding: 0px 10px 10px 10px;
+}
+
+.listSideBar:hover {
+    opacity: .75;
+}
+
+.footerHover:hover {
+    color: lime;
+}
+
+.containerImage {
+    overflow: hidden;
+}
+
+.opacityForm {
+    opacity: .5;
+}
+
+.linksInherit {
+    color: inherit;
+    text-decoration: none;
+}
+
+.boostrapIcons {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.boostrapIconsHeader {
+    font-size: 2rem;
+    color: white;
+    margin-right: 5px;
+}
+
+.iconsPre {
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 20px;
+}
+
+/* H1 y H2 POR ENCIMA*/
+
+.promotion {
+    padding: 5px 0px 2px 0px;
+    text-align: center;
+    background-color: lime;
+    font-size: 1, 5em;
+    font-weight: bold;
+    color: white;
+}
+
+/* IMAGENES HEADER */
+
+header {
+    background-color: black;
+}
+
+.imagesHeader {
+    display: flex;
+    align-items: flex-end;
+}
+
+.imagesHeaderLeft {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.imagesHeaderLeft .item1 {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.imagesHeaderRight {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    width: 100%;
+    justify-content: end;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+.headerLink {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.textHeader {
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+
+/* LINEA MENU DE NAV */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menuNavContainer {
+    display: flex;
+    background-color: #080808;
+    width: 100%;
+}
+
+.menuNav {
+    display: flex;
+    gap: 30px;
+    padding: 10px 100px 0px 20px;
+    list-style-type: none;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.navForm {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.navFormInput {
+    width: 94%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.navFormButton {
+    background-color: black;
+    border: none;
+}
+
+/* SECCION PRINCIPAL */
+
+main {
+    background-color: #0d0d0d;
+}
+
+.mainSection {
+    display: flex;
+    padding: 15px;
+}
+
+.sideBar {
+    background-color: lime;
+    color: white;
+}
+
+.sideBarTitle {
+    font-size: 2em;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #0d0d0d;
+}
+
+.sideBarList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+    padding: 30px 5px;
+    font-size: 2em;
+}
+
+/* TEXTO IMPORTANTE RECTANGULO NEGRO */
+
+.preTextContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin: 20px 250px;
+    border-bottom: solid lime;
+}
+
+.preTextItem {
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+    font-family: monospace;
+    color: white;
+}
+
+.pre1 {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.pre2 {
+    font-size: 15px;
+    color: white;
+}
+
+/* FEATURED */
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d0d;
+}
+
+.featuredTitle {
+    align-self: center;
+    color: azure;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.featuredItems {
+    display: flex;
+    justify-content: center;
+    margin: 40px 300px 50px 300px;
+    gap: 30px;
+}
+
+.featuredImages {
+    width: 250px;
+    height: 250px;
+    border-radius: 3em 1em;
+    border: solid azure;
+    transition: transform 0.4s ease;
+}
+
+.featuredImages:hover {
+    transform: scale(1.1);
+    opacity: .75;
+    margin-bottom: 10px;
+}
+
+.featuredTextContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #101010;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: solid lime;
+}
+
+.featuredText {
+    font-size: 9px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.featuredPrecio {
+    color: lime;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+span {
+    color: #bababa;
+    font-style: italic;
+}
+
+.featuredPrecio2 {
+    color: lime;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 1rem;
+}
+
+
+.alignText {
+    align-self: center;
+}
+
+.featuredButtons {
+    display: flex;
+    align-self: center;
+    gap: 30px;
+}
+
+.featuredButtonsSpace {
+    padding: 10px;
+}
+
+.buttonsConfig {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #101010;
+    border: none;
+    color: white;
+}
+
+/* VER MAS PRODUCTOS */
+
+.seeMoreButton {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.seeMore {
+    background-color: lime;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.advertising {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 35px 0px 40px 0px;
+    color: white;
+    margin-bottom: 0%;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: solid lime;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footerContactItems {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerBaseline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.footerSocials {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.iconsSpacecontainer {
+    display: flex;
+    gap: 15px;
+}
+
+.footerFormContainer {
+    margin-top: 5px;
+}
+
+.footerFormItems {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footerInputEmail {
+    background-color: #0d0d0d;
+    border: 1px solid #ccc;
+    opacity: .5;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: 60%;
+    padding: 3px 0px 4px 0px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footerSubmitEmail {
+    background-color: rgb(43, 47, 49);
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.footerSubmitEmail:hover {
+    background-color: lime;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+/* PRODUCTOS Y ACCESORIOS */
+
+.mainTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.textTop {
+    font-size: 3em;
+}
+
+.formGroup {
+    margin-right: 30px;
+    width: 15%;
+    margin-top: 20px;
+}
+
+.formControl {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: #0d0d0d;
+    border: 1px solid #ccc;
+    opacity: .5;
+    border-radius: 4px;
+}
+
+.formControl:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: 1fr auto 20px 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 420px);
+    grid-template-areas:
+        ". sideBar . containerImages1 containerImages1 containerImages1 ."
+        ". sideBar . containerImages2 containerImages2 containerImages2 ."
+        ". sideBar . containerImages3 containerImages3 containerImages3 ."
+        ". sideBar . containerImages4 containerImages4 containerImages4 ."
+        ". sideBar . containerImages5 containerImages5 containerImages5 .";
+
+
+
+
+    padding: 100px 0px 50px;
+}
+
+.sideBarCategories {
+    grid-area: sideBar;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    color: white;
+}
+
+.containerImages1 {
+    grid-area: containerImages1;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.containerImages2 {
+    grid-area: containerImages2;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.containerImages3 {
+    grid-area: containerImages3;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.containerImages4 {
+    grid-area: containerImages4;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.containerImages5 {
+    grid-area: containerImages5;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.texth3 {
+    font-size: 3em;
+    color: azure;
+}
+
+.texth4 {
+    font-size: 3em;
+    color: azure;
+}
+
+.listCategories {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: lighter;
+    list-style-type: none;
+    gap: 15px;
+    margin: 40px 0px;
+    padding-left: 0px;
+}
+
+.productsImages {
+    width: 250px;
+    height: 260px;
+    border-radius: 3em 1em;
+    border: solid azure;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* CONTACTO */
+
+.contactTop {
+    color: white;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        ". topContainer topContainer topContainer topContainer ."
+        ". midContainer midContainer midContainer midContainer ."
+        ". midContainer midContainer midContainer midContainer ."
+        ". bottomContainer bottomContainer bottomContainer bottomContainer ."
+        ". bottomContainer bottomContainer bottomContainer bottomContainer .";
+
+    justify-items: center;
+    align-items: center;
+    padding: 50px 0px 20px 0;
+}
+
+.contactTopContainer {
+    grid-area: topContainer;
+    display: flex;
+    color: white;
+}
+
+.contactTopFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    gap: 15px;
+}
+
+.contactH3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contactH4 {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.contactMidContainer {
+    grid-area: midContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.contactMidForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    max-width: 600px;
+}
+
+.contactMidForm input:not(.formInputSendMsg),
+.contactMidForm textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formInputName {
+    width: 223%;
+    background-color: #0d0d0d;
+}
+
+.formEmailTelContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    background-color: #0d0d0d;
+}
+
+.formInputEmail {
+    width: 150%;
+    background-color: #0d0d0d;
+}
+
+.formInputTel {
+    width: 142%;
+    background-color: #0d0d0d;
+}
+
+.formInputMsj {
+    width: 243%;
+    background-color: #0d0d0d;
+}
+
+.formInputBot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 20px 15px 20px 15px;
+    gap: 15px;
+    font-size: 1.5em;
+    text-transform: none;
+    border: 1px solid rgb(89, 93, 94);
+    background-color: #0d0d0d;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+}
+
+.botInput {
+    display: none;
+}
+
+.botInput+.botText {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.botText::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    opacity: .5;
+    border-radius: 4px;
+    margin-right: 15px;
+    background-color: #0d0d0d;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.botInput:checked+.botText::before {
+    content: '\2714';
+    background-color: #0d0d0d;
+    border: none;
+    color: lime;
+    font-size: 2em;
+}
+
+.botInput:checked+.botText::before::after {
+    content: '\2714';
+    color: lime;
+    font-size: 2em;
+}
+
+.botText {
+    color: white;
+}
+
+.formInputSendMsg {
+    background-color: rgb(43, 47, 49);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]:checked~input[type="submit"] {
+    background-color: lime;
+}
+
+.contactBottomContainer {
+    grid-area: bottomContainer;
+}
+
+.doubts {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.map {
+    display: block;
+    margin-left: 14px;
+}
+
+/* PREGUNTAS FRECUENTES */
+
+.lastTitle {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.lastTextContainer {
+    display: grid;
+    grid-template-columns: repeat(6, fr);
+    grid-template-rows: repeat(4, fr);
+    grid-template-areas:
+        ". . lastText lastText . ."
+        ". . lastText lastText . ."
+        ". . lastText lastText . ."
+        ". . lastText lastText . .";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastText {
+    grid-area: lastText;
+    color: white;
+    font-size: 1.5em;
+    padding: 100px 0px;
+}
+
+.lastP {
+    margin-top: 15px;
+}
+
+.lastH2 {
+    margin-top: 50px;
+}
+
+.payImages {
+    margin-top: 30px;
+    width: 92px;
+    height: 58px;
+}

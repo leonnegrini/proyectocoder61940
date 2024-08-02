@@ -55,10 +55,6 @@ body {
     color: lime;
 }
 
-.containerImage {
-    overflow: hidden;
-}
-
 .opacityForm {
     opacity: .5;
 }
@@ -275,11 +271,15 @@ main {
     gap: 30px;
 }
 
+.featuredImagesBorder {
+    border-radius: 3em 1em;
+    border: solid azure;
+    overflow: hidden;
+}
+
 .featuredImages {
     width: 250px;
     height: 250px;
-    border-radius: 3em 1em;
-    border: solid azure;
     transition: transform 0.4s ease;
 }
 

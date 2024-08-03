@@ -283,7 +283,7 @@ main {
     transition: opacity 0.5s ease-in-out;
 }
 
-/*transition: transform 0.4s ease; El borde no acompaña y no me gusta como queda, ya veré como solucionarlo */
+
 
 .featuredImages:hover {
     transform: scale(1.1);

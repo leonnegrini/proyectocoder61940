@@ -675,9 +675,9 @@ h6 {
 
 .formEmailTelContainer {
     display: flex;
+    flex-direction: column;
     background-color: #0d0d0d;
     width: 100%;
-    gap: 20px;
 }
 
 .formInputEmail {

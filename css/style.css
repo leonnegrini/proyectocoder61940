@@ -908,7 +908,7 @@ input[type="checkbox"]:checked~input[type="submit"] {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
 
     /* Header/Nav/Footer */
     .promotion h1 {

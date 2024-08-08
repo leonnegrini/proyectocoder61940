@@ -613,8 +613,11 @@ h6 {
     grid-area: topContainer;
     display: flex;
     color: white;
-    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.responsiveRowColumn {
+    display: flex;
 }
 
 .contactTopFlex {
@@ -895,6 +898,11 @@ input[type="checkbox"]:checked~input[type="submit"] {
             "topContainer topContainer"
             "midContainer midContainer"
             "bottomContainer bottomContainer";
+    }
+
+    .responsiveRowColumn {
+        display: flex;
+        flex-direction: column;
     }
 
     .contactMidForm {

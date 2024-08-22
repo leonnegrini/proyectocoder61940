@@ -1,0 +1,94 @@
+@import '../utilities/variables';
+
+header {
+    background-color: $color-black;
+}
+
+.imagesHeader {
+    @include flex-center(row, flex-end);
+}
+
+.imagesHeaderLeft {
+    @include flex-center(row, flex-end);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.imagesHeaderLeft .item1 {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.imagesHeaderRight {
+    @include flex-center(row, flex-end);
+    height: 100px;
+    width: 100%;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+.headerLink {
+    @include flex-center(row, flex-end);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.textHeader {
+    color: $color-white;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menuNavContainer {
+    @include flex-center(row, center, space-around);
+    gap: 20px;
+    background-color: $color-black;
+    padding: 0 20px;
+}
+
+.menuNav {
+    display: flex;
+    gap: 20px;
+}
+
+.menuNav li {
+    margin: 10px;
+}
+
+.navForm {
+    display: flex;
+    gap: 10px;
+}
+
+.navFormInput {
+    color: $color-white;
+    font-size: $font-size-medium;
+    background-color: $color-black;
+    border: 1px solid $color-light-grey;
+    opacity: .5;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.navFormButton {
+    background-color: rgb(43, 47, 49);
+    color: $color-white;
+    border: none;
+    padding: 10px 15px;
+    font-size: $font-size-medium;
+    font-weight: bold;
+    border-radius: 4px;
+    @include transition(background-color);
+}
+
+.navFormButton:hover {
+    background-color: $color-lime;
+}
+

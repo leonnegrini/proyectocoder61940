@@ -1,0 +1,83 @@
+@import '../utilities/variables';
+@import '../utilities/mixin';
+
+footer {
+    border-top: $color-lime;
+}
+
+.footerContainer {
+    @include flex-center(row, center, space-around);
+    color: $color-white;
+    background-color: $color-black;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footerContactitems {
+    width: 100%;
+    @include flex-center(row, center, space-between);
+    gap: 10px;
+}
+
+.footerBaseline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.footerSocials {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.iconsSpaceContaincer {
+    @include flex-center(row, center, space-between);
+    gap: 15px;
+}
+
+.footerFormContainer {
+    margin-top: 5px;
+}
+
+.footerFormItems {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footerInputEmail {
+    background-color: $color-black;
+    border: 1px solid $color-light-grey;
+    opacity: .5;
+    border-radius: 4px;
+    font-size: $font-size-medium;
+    width: 60%;
+    padding: 3px 0px 4px 0px;
+    color: $color-white;
+    text-transform: capitalize;
+}
+
+.footerSubmitEmail {
+    background-color: rgb(43, 47, 49);
+    color: $color-white;
+    border: none;
+    padding: 7px 10px;
+    font-size: $font-size-medium;
+    font-weight: bold;
+    border-radius: 4px;
+    @include transition(background-color);
+}
+
+.footerSubmitEmail:hover {
+    background-color: $color-lime;
+}
+
+h5, h6 {
+    font-size: $font-size-medium;
+}

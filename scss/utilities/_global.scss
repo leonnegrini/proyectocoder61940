@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.noMarginText {
+    margin: 0;
+}
+
+.bgleon {
+    background-color: $color-black;
+}
+
+.bgleon:focus {
+    background-color: $color-black;
+}
+
+.linksNav:focus, 
+.listSideBar:focus {
+    opacity: .75;
+}
+
+.linksNav:hover {
+    border-bottom: 3px solid $color-lime;
+    opacity: .75;
+    padding: 0px 10px 10px 10px;
+}
+
+.listSideBar:hover {
+    opacity: .75;
+}
+
+.footerHover:hover {
+    color: $color-lime;
+}
+
+.opacityForm {
+    opacity: .5;
+}
+
+.linksInherit {
+    color: inherit;
+    text-decoration: none;
+}
+
+.boostrapIcons {
+    font-size: 3.5rem;
+    color: $color-white;
+}
+
+.boostrapIconsHeader {
+    font-size: 2rem;
+    color: $color-white;
+    margin-right: 5px;
+}
+
+.iconsPre {
+    font-size: 2.5rem;
+    color: $color-white;
+    margin-right: 20px;
+}

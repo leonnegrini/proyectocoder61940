@@ -1,0 +1,42 @@
+@import '../utilities/variables';
+@import '../utilities/mixin';
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    @include flex-center(row, center, space-between);
+}
+
+.sideBar {
+    width: 25%;
+    padding: 10px;
+}
+
+.carousel {
+    width: 75%;
+}
+
+.preTextcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.preTextItem {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.featuredRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.featuredItems {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+

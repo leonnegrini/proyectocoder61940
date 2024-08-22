@@ -1,0 +1,12 @@
+// Flexbox Centro
+@mixin flex-center($direction: row, $align: center, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// Transition
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+    transition: $properties $duration $timing-function;
+}

@@ -7,8 +7,52 @@ $color-lime: lime;
 $color-azure: azure;
 $color-light-grey: #ccc;
 
+// Border Colors
+$border-color: lime;
+$border-color-light: #ccc;
+
+// Background Colors
+$background-color-dark: black;
+$background-color-light: #0d0d0d;
+$background-color-lime: lime;
+$main-background-color: #080808;
+
+// Hover Background
+$hover-background: lime;
+
+// Submit Background
+$submit-background: rgb(43, 47, 49);
+
+// Gaps
+$gap-large: 30px;
+$gap-medium: 40px;
+$gap-small: 10px;
+
+// Images
+$image-width-left: 200px;
+$image-height: 100px;
+$image-width-right: 100px;
+
 // Font Sizes
-$font-size-small: 1.2rem;
-$font-size-medium: 1.5rem;
-$font-size-large: 2rem;
+$font-size-small: 1.5em;
+$font-size-medium: 1.2rem;
+$font-size-large: 1.5rem;
 $font-size-xlarge: 3rem;
+
+// FontWeight
+$bold-font-weight: bold;
+
+// Border Radius
+$border-radius: 4px;
+
+// Transition Time
+$transition-time: 0.2s;
+
+// Letter Spacing
+$letter-spacing: 1px;
+
+// Border
+$border-none: none;
+
+// Nav Padding
+$nav-form-padding-left: 10px;

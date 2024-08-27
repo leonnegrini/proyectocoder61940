@@ -475,11 +475,7 @@ footer {
     background-color: lime;
 }
 
-h5 {
-    font-size: 1.5em;
-}
-
-h6 {
+.fontSize15em {
     font-size: 1.5em;
 }
 

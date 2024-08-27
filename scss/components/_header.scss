@@ -1,94 +1,97 @@
 @import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../utilities/extend';
+
+.promotion {
+  padding: $gap-small 0 $gap-medium 0;
+  text-align: center;
+  background-color: $color-lime;
+  font-size: $font-size-small;
+  font-weight: $bold-font-weight;
+  color: $color-white;
+}
 
 header {
-    background-color: $color-black;
-}
+  background-color: $background-color-dark;
 
-.imagesHeader {
-    @include flex-center(row, flex-end);
-}
+  .imagesHeader {
+    @include flex-center(row, flex-end, flex-start);
 
-.imagesHeaderLeft {
-    @include flex-center(row, flex-end);
-    width: 100%;
-    padding-bottom: 10px;
-}
+    .imagesHeaderLeft {
+      @include flex-center(row, flex-end, flex-start);
+      width: 100%;
+      padding-bottom: $gap-medium;
 
-.imagesHeaderLeft .item1 {
-    width: 200px;
-    height: 100px;
-    margin-left: 40px;
-}
+      .item1 {
+        width: $image-width-left;
+        height: $image-height;
+        margin-left: $gap-medium;
+      }
+    }
 
-.imagesHeaderRight {
-    @include flex-center(row, flex-end);
-    height: 100px;
-    width: 100%;
-    gap: 40px;
-    padding-right: 40px;
-}
+    .imagesHeaderRight {
+      @include flex-center(row, flex-end, flex-start);
+      width: $image-width-right;
+      height: $image-height;
+      padding-right: $gap-medium;
+      gap: $gap-medium;
+    }
+  }
 
-.headerLink {
-    @include flex-center(row, flex-end);
-    text-decoration: none;
+  .headerLink {
+    @include flex-center(row, flex-end, flex-start);
+    text-decoration: $border-none;
     font-size: 12px;
-}
 
-.textHeader {
-    color: $color-white;
-    align-self: flex-end;
-    margin-bottom: 0px;
+    .textHeader {
+      color: $color-white;
+      align-self: flex-end;
+      margin-bottom: 0;
+    }
+  }
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-.menuNavContainer {
-    @include flex-center(row, center, space-around);
-    gap: 20px;
-    background-color: $color-black;
-    padding: 0 20px;
-}
+  .menuNavContainer {
+    @include flex-center(row, flex-start, flex-start);
+    background-color: $main-background-color;
+    width: 100%;
 
-.menuNav {
-    display: flex;
-    gap: 20px;
-}
+    .menuNav {
+      @include flex-center(row, flex-start, space-between);
+      gap: $gap-large;
+      padding: $gap-medium 100px 0 $gap-small;
+      list-style-type: $border-none;
+      color: $color-white;
+      font-size: $font-size-large;
+      width: 100%;
+      letter-spacing: $letter-spacing;
+    }
 
-.menuNav li {
-    margin: 10px;
-}
+    .navForm {
+      @include flex-center(row, flex-end, flex-start);
+      width: 50%;
 
-.navForm {
-    display: flex;
-    gap: 10px;
-}
+      .navFormInput {
+        width: 94%;
+        color: $color-white;
+        font-weight: $bold-font-weight;
+        font-size: $font-size-large;
+        background-color: $background-color-dark;
+        border: $border-none;
+        outline: $border-none;
+        padding-left: $nav-form-padding-left;
+        text-transform: capitalize;
+      }
 
-.navFormInput {
-    color: $color-white;
-    font-size: $font-size-medium;
-    background-color: $color-black;
-    border: 1px solid $color-light-grey;
-    opacity: .5;
-    border-radius: 4px;
-    padding: 5px;
+      .navFormButton {
+        background-color: $background-color-dark;
+        border: $border-none;
+      }
+    }
+  }
 }
-
-.navFormButton {
-    background-color: rgb(43, 47, 49);
-    color: $color-white;
-    border: none;
-    padding: 10px 15px;
-    font-size: $font-size-medium;
-    font-weight: bold;
-    border-radius: 4px;
-    @include transition(background-color);
-}
-
-.navFormButton:hover {
-    background-color: $color-lime;
-}
-

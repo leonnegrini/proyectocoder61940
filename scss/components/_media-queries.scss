@@ -1,0 +1,190 @@
+@import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../utilities/extend';
+
+@media (max-width: 1200px) {
+    // Header
+
+    // Main
+    .featuredRow {
+        @include flex-center(row, center, wrap);
+        justify-content: center;
+    }
+
+    // Footer
+
+    // Productos y Accesorios
+    .productsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    // Contacto
+
+    // Preguntas frecuentes
+}
+
+@media (max-width: 900px) {
+
+    // Header
+    .imagesHeader {
+        @include flex-center(row, flex-end, space-around);
+    }
+
+    .menuNavContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuNav li {
+        margin-right: 0;
+        margin-bottom: $gap-small;
+    }
+
+    .navForm {
+        margin-top: $gap-small;
+        width: 100%;
+        @include flex-center(row, center, space-between);
+    }
+
+    .navFormInput {
+        flex: 1;
+    }
+
+    .navFormButton {
+        width: auto;
+        margin-top: 0;
+    }
+
+    // Main
+    .mainSection {
+        @include flex-center(column, flex-start, center);
+    }
+
+    // Footer
+
+    // Productos y Accesorios
+    .mainContainer {
+        display: block;
+    }
+
+    .productsAside {
+        display: none;
+    }
+
+    .productsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // Contacto
+    .contactGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "topContainer topContainer"
+            "midContainer midContainer"
+            "bottomContainer bottomContainer";
+    }
+
+    .responsiveRowColumn {
+        @include flex-center(column, flex-start, center);
+    }
+
+    .contactMidForm {
+        width: 100%;
+        padding: 0 $gap-small;
+    }
+
+    .formEmailTelContainer {
+        @include flex-center(column, flex-start, center);
+        gap: 0;
+    }
+
+    // Preguntas frecuentes
+}
+
+@media (max-width: 600px) {
+
+    // Header
+    .menuNav {
+        flex-direction: column;
+    }
+
+    .promotion h1 {
+        font-size: 1.4rem;
+    }
+
+    .headerLink p {
+        display: none;
+    }
+
+    .menuNavContainer {
+        padding: $gap-small;
+    }
+
+    .menuNav a {
+        font-size: 1.4rem;
+    }
+
+    .navFormInput {
+        font-size: 1.4rem;
+    }
+
+    .navFormButton {
+        font-size: 1.4rem;
+    }
+
+    // Main
+    .sideBar {
+        display: none;
+    }
+
+    .preTextContainer {
+        @include flex-center(column, flex-start, center);
+    }
+
+    .preTextItem {
+        flex: 1 1 100%;
+    }
+
+    // Footer
+    .noMarginText {
+        display: none;
+    }
+
+    .iconsSpacecontainer {
+        @include flex-center(column, flex-start, center);
+    }
+
+    .displayNoneFooter {
+        display: none;
+    }
+
+    .footerTextResponsive {
+        font-size: 1rem;
+    }
+
+    // Productos y Accesorios
+
+    // Contacto
+    .contactTopFlex {
+        padding: 0 $gap-small;
+    }
+
+    .contactH3 {
+        font-size: 1.2em;
+    }
+
+    .contactH4 {
+        font-size: 10px;
+    }
+
+    .contactMidForm {
+        padding: $gap-small 0;
+    }
+
+    .formInputBot {
+        padding: $gap-small 5px;
+    }
+
+    // Preguntas frecuentes
+}

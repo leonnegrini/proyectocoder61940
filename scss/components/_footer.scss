@@ -1,83 +1,81 @@
 @import '../utilities/variables';
 @import '../utilities/mixin';
+@import '../utilities/extend';
 
 footer {
-    border-top: $color-lime;
+  border-top: solid $border-color;
 }
 
 .footerContainer {
-    @include flex-center(row, center, space-around);
-    color: $color-white;
-    background-color: $color-black;
+  @include flex-center(row, center, space-around);
+  color: $color-white;
+  background-color: $background-color-dark;
 }
 
 .footerContact {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
+  @include flex-center(column, flex-start, center);
+  margin-top: $gap-small;
 
-.footerContactitems {
+  .footerContactItems {
+    @include flex-center(row, center, flex-start);
     width: 100%;
-    @include flex-center(row, center, space-between);
-    gap: 10px;
+    gap: $gap-small;
+  }
 }
 
 .footerBaseline {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    gap: 20px;
+  @include flex-center(column, flex-start, center);
+  margin-top: $gap-medium;
+  gap: $gap-large;
 }
 
 .footerSocials {
-    align-self: flex-start;
-    margin-top: 20px;
-}
+  align-self: flex-start;
+  margin-top: $gap-small;
 
-.iconsSpaceContaincer {
-    @include flex-center(row, center, space-between);
-    gap: 15px;
+  .iconsSpacecontainer {
+    @include flex-center(row, center, flex-start);
+    gap: $gap-medium;
+  }
 }
 
 .footerFormContainer {
-    margin-top: 5px;
-}
+  margin-top: $gap-small;
 
-.footerFormItems {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 10px;
-}
+  .footerFormItems {
+    @include flex-center(column, flex-start, center);
+    gap: $gap-small;
+    margin-top: $gap-medium;
+  }
 
-.footerInputEmail {
-    background-color: $color-black;
-    border: 1px solid $color-light-grey;
-    opacity: .5;
-    border-radius: 4px;
-    font-size: $font-size-medium;
+  .footerInputEmail {
+    background-color: $background-color-light;
+    border: 1px solid $border-color-light;
+    opacity: 0.5;
+    border-radius: $border-radius;
+    font-size: $font-size-large;
     width: 60%;
-    padding: 3px 0px 4px 0px;
+    padding: 3px 0 4px 0;
     color: $color-white;
     text-transform: capitalize;
-}
+  }
 
-.footerSubmitEmail {
-    background-color: rgb(43, 47, 49);
+  .footerSubmitEmail {
+    background-color: $submit-background;
     color: $color-white;
-    border: none;
+    border: $border-none;
     padding: 7px 10px;
     font-size: $font-size-medium;
-    font-weight: bold;
-    border-radius: 4px;
-    @include transition(background-color);
+    font-weight: $bold-font-weight;
+    border-radius: $border-radius;
+    @include transition(background-color, $transition-time);
+
+    &:hover {
+      background-color: $hover-background;
+    }
+  }
 }
 
-.footerSubmitEmail:hover {
-    background-color: $color-lime;
-}
-
-h5, h6 {
-    font-size: $font-size-medium;
+.fontSize15em {
+  font-size: $font-size-small;
 }

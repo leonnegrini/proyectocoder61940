@@ -8,3 +8,59 @@
 %full-width {
     width: 100%;
 }
+
+%featuredTextContainerBase {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-dark-grey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: solid $color-lime;
+
+    .alignText {
+        align-self: center;
+    }
+
+    .featuredText {
+        font-size: 9px;
+        color: $color-white;
+        font-weight: $bold-font-weight;
+        padding-top: 10px;
+    }
+
+    .featuredPrecio {
+        color: $color-lime;
+        padding-top: 10px;
+        font-size: $font-size-medium;
+
+        span {
+            color: #bababa;
+            font-style: italic;
+        }
+    }
+
+    .featuredPrecio2 {
+        color: $color-lime;
+        font-weight: $bold-font-weight;
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+
+    .featuredButtons {
+        display: flex;
+        align-self: center;
+        gap: $gap-large;
+
+        .featuredButtonsSpace {
+            padding: $gap-small;
+        }
+
+        .buttonsConfig {
+            font-size: 12px;
+            font-weight: $bold-font-weight;
+            background-color: $color-dark-grey;
+            border: $border-none;
+            color: $color-white;
+        }
+    }
+}

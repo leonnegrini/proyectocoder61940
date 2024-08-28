@@ -1,0 +1,93 @@
+@import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../utilities/extend';
+
+.textTop {
+    font-size: 3rem; 
+}
+
+.formGroup {
+    margin-right: $gap-medium; 
+    width: 15%;
+    margin-top: 20px;
+}
+
+.formControl {
+    @extend %full-width;
+    padding: 15px;
+    font-size: 14px; 
+    color: $color-white;
+    font-weight: $bold-font-weight;
+    background-color: $background-color-light;
+    border: 1px solid $border-color-light; 
+    opacity: 0.5;
+    border-radius: $border-radius; 
+
+    &:focus {
+        border-color: #66afe9; 
+        outline: 0;
+        box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    max-width: 100%; 
+    gap: 2rem; 
+    color: $color-white;
+}
+
+
+.productsHeader {
+    grid-column: span 2;
+    @include flex-center(row, center, space-between);
+}
+
+
+.productsAside {
+    padding: 100px 0px 50px;
+}
+
+
+.listCategories {
+    display: flex;
+    flex-direction: column; 
+    font-size: 2em; 
+    font-weight: lighter;
+    list-style-type: none;
+    gap: 15px;
+    margin: 40px 0px;
+    padding-left: 0px;
+}
+
+.font3Azure {
+    font-size: 3em; 
+    color: $color-azure;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 100px 0px 120px;
+
+    article {
+        .productsImages {
+            width: 250px;
+            height: 250px;
+            max-width: 100%; 
+            max-height: 100%; 
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            border-radius: 3em 1em;
+            border: solid $color-azure; 
+            @include transition(opacity, 0.5s ease-in-out);
+        }
+
+        .featuredTextContainer {
+            @extend %featuredTextContainerBase;
+        }
+    }
+}

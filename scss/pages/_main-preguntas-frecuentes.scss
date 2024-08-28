@@ -1,0 +1,43 @@
+@import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../utilities/extend';
+
+.lastTitle {
+    text-align: center;
+    color: $color-white;
+    font-weight: $bold-font-weight;
+    font-size: 3em;
+}
+
+.lastTextContainer {
+    display: grid;
+    grid-template-columns: repeat(6, fr);
+    grid-template-rows: repeat(4, fr);
+    grid-template-areas:
+        ". . lastText lastText . ."
+        ". . lastText lastText . ."
+        ". . lastText lastText . ."
+        ". . lastText lastText . .";
+    @include flex-center(row, center, center);
+}
+
+.lastText {
+    grid-area: lastText;
+    color: $color-white;
+    font-size: $font-size-small;
+    padding: 100px 0px;
+}
+
+.lastP {
+    margin-top: 15px;
+}
+
+.lastH2 {
+    margin-top: 50px;
+}
+
+.payImages {
+    margin-top: $gap-large;
+    width: 92px;
+    height: 58px;
+}

@@ -7,7 +7,7 @@
 
     // Main
     .featuredRow {
-        @include flex-center(row, center, wrap);
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -27,7 +27,7 @@
 
     // Header
     .imagesHeader {
-        @include flex-center(row, flex-end, space-around);
+        justify-content: space-around;
     }
 
     .menuNavContainer {
@@ -86,12 +86,12 @@
     }
 
     .responsiveRowColumn {
-        @include flex-center(column, flex-start, center);
+        flex-direction: column;
     }
 
     .contactMidForm {
         width: 100%;
-        padding: 0 $gap-small;
+        padding: 0 20px;
     }
 
     .formEmailTelContainer {
@@ -110,7 +110,7 @@
     }
 
     .promotion h1 {
-        font-size: 1.4rem;
+        font-size: 14px;
     }
 
     .headerLink p {
@@ -122,11 +122,11 @@
     }
 
     .menuNav a {
-        font-size: 1.4rem;
+        font-size: 14px;
     }
 
     .navFormInput {
-        font-size: 1.4rem;
+        font-size: 14px;
     }
 
     .navFormButton {
@@ -160,7 +160,7 @@
     }
 
     .footerTextResponsive {
-        font-size: 1rem;
+        font-size: 10px;
     }
 
     // Productos y Accesorios

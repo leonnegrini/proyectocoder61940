@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.footerContact .footerContactItems {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,8 +81,12 @@ body {
   margin-right: 20px;
 }
 
+.footerContact .footerContactItems {
+  width: 100%;
+}
+
 .promotion {
-  padding: 10px 0 40px 0;
+  padding: 5px 0px 2px 0;
   text-align: center;
   background-color: lime;
   font-size: 1.5em;
@@ -93,15 +101,12 @@ header .imagesHeader {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: center;
 }
 header .imagesHeader .imagesHeaderLeft {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 header .imagesHeader .imagesHeaderLeft .item1 {
   width: 200px;
@@ -110,9 +115,7 @@ header .imagesHeader .imagesHeaderLeft .item1 {
 }
 header .imagesHeader .imagesHeaderRight {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: end;
   width: 100px;
   height: 100px;
   padding-right: 40px;
@@ -120,9 +123,7 @@ header .imagesHeader .imagesHeaderRight {
 }
 header .headerLink {
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
-  justify-content: flex-start;
   text-decoration: none;
   font-size: 12px;
 }
@@ -139,46 +140,43 @@ nav {
 }
 nav .menuNavContainer {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   background-color: #080808;
   width: 100%;
 }
 nav .menuNavContainer .menuNav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 30px;
-  padding: 40px 100px 0 10px;
+  padding: 10px 100px 0px 20px;
   list-style-type: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   width: 100%;
   letter-spacing: 1px;
 }
 nav .menuNavContainer .navForm {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 50%;
 }
 nav .menuNavContainer .navForm .navFormInput {
   width: 94%;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   background-color: black;
   border: none;
   outline: none;
   padding-left: 10px;
   text-transform: capitalize;
+  padding-left: 10px;
 }
 nav .menuNavContainer .navForm .navFormButton {
   background-color: black;
   border: none;
+}
+
+.footerContact .footerContactItems {
+  width: 100%;
 }
 
 main {
@@ -190,8 +188,8 @@ main {
   color: white;
 }
 .sideBar .sideBarTitle {
-  font-size: 3rem;
-  padding: 10px 0;
+  font-size: 1.5rem;
+  padding: 15px 0;
   text-align: center;
   font-weight: bold;
   border-bottom: 2px solid #0d0d0d;
@@ -199,12 +197,10 @@ main {
 .sideBar .sideBarList {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 30px;
   list-style-type: none;
   padding: 30px 5px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 #carouselContainer.carousel {
@@ -228,11 +224,9 @@ main {
 
 .preTextContainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  background-color: #0d0d0d;
-  margin: 40px;
+  background-color: black;
+  margin: 20px;
   border-bottom: solid lime;
 }
 .preTextContainer .preTextItem {
@@ -257,8 +251,6 @@ main {
 .featured {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   background-color: #0d0d0d;
 }
 .featured .featuredTitle {
@@ -266,7 +258,7 @@ main {
   color: azure;
   font-size: 3em;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .featured .featuredItems {
   display: flex;
@@ -277,9 +269,6 @@ main {
 }
 .featured .featuredItems .featuredRow {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   gap: 30px;
 }
 .featured .featuredImagesBorder {
@@ -300,8 +289,6 @@ main {
 .featured .featuredTextContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   background-color: #101010;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -333,9 +320,7 @@ main {
 }
 .featured .featuredButtons {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-self: center;
   gap: 30px;
 }
 .featured .featuredButtons .featuredButtonsSpace {
@@ -365,11 +350,15 @@ main {
 
 .advertising {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 35px 0 110px;
   color: white;
   margin-bottom: 0;
+}
+
+.footerContact .footerContactItems {
+  width: 100%;
 }
 
 footer {
@@ -388,50 +377,38 @@ footer {
 .footerContact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .footerContact .footerContactItems {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
   gap: 10px;
 }
 
 .footerBaseline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   margin-top: 40px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footerSocials {
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .footerSocials .iconsSpacecontainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
+  gap: 15px;
 }
 
 .footerFormContainer {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .footerFormContainer .footerFormItems {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 40px;
+  gap: 5px;
+  margin-top: 10px;
 }
 .footerFormContainer .footerInputEmail {
   background-color: #0d0d0d;
@@ -462,12 +439,13 @@ footer {
   font-size: 1.5em;
 }
 
+.footerContact .footerContactItems {
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   .featuredRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: wrap;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .productsContainer {
@@ -476,9 +454,6 @@ footer {
 }
 @media (max-width: 900px) {
   .imagesHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
     justify-content: space-around;
   }
   .menuNavContainer {
@@ -525,14 +500,11 @@ footer {
     grid-template-areas: "topContainer topContainer" "midContainer midContainer" "bottomContainer bottomContainer";
   }
   .responsiveRowColumn {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
   }
   .contactMidForm {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .formEmailTelContainer {
     display: flex;
@@ -547,7 +519,7 @@ footer {
     flex-direction: column;
   }
   .promotion h1 {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .headerLink p {
     display: none;
@@ -556,10 +528,10 @@ footer {
     padding: 10px;
   }
   .menuNav a {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .navFormInput {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .navFormButton {
     font-size: 1.4rem;
@@ -589,7 +561,7 @@ footer {
     display: none;
   }
   .footerTextResponsive {
-    font-size: 1rem;
+    font-size: 10px;
   }
   .contactTopFlex {
     padding: 0 10px;

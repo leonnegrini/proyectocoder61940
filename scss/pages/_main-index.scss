@@ -11,19 +11,20 @@ main {
     color: $color-white;
 
     .sideBarTitle {
-        font-size: $font-size-xlarge;
-        padding: $gap-small 0;
+        font-size: $font-size-large;
+        padding: 15px 0;
         text-align: center;
         font-weight: $bold-font-weight;
         border-bottom: 2px solid $background-color-light;
     }
 
     .sideBarList {
-        @include flex-center(column, flex-start, center);
+        display: flex;
+        flex-direction: column;
         gap: $gap-large;
         list-style-type: $border-none;
         padding: $gap-large 5px;
-        font-size: $font-size-xlarge;
+        font-size: $font-size-large;
     }
 }
 
@@ -52,9 +53,10 @@ main {
 }
 
 .preTextContainer {
-    @include flex-center(row, center, space-around);
-    background-color: $color-black;
-    margin: $gap-medium;
+    display: flex;
+    justify-content: space-around;
+    background-color: $background-color-dark;
+    margin: 20px;
     border-bottom: solid $color-lime;
 
     .preTextItem {
@@ -77,7 +79,8 @@ main {
 }
 
 .featured {
-    @include flex-center(column, flex-start, center);
+    display: flex;
+    flex-direction: column;
     background-color: $background-color-light;
 
     .featuredTitle {
@@ -85,7 +88,7 @@ main {
         color: $color-azure;
         font-size: 3em;
         font-weight: $bold-font-weight;
-        margin-top: $gap-medium;
+        margin-top: 20px;
     }
 
     .featuredItems {
@@ -93,7 +96,7 @@ main {
         margin: $gap-large 0 $gap-medium;
 
         .featuredRow {
-            @include flex-center(row, center, flex-start);
+            display: flex;
             gap: $gap-large;
         }
     }
@@ -117,7 +120,8 @@ main {
     }
 
     .featuredTextContainer {
-        @include flex-center(column, flex-start, center);
+        display: flex;
+        flex-direction: column;
         background-color: $color-dark-grey;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -154,7 +158,8 @@ main {
     }
 
     .featuredButtons {
-        @include flex-center(row, center, space-between);
+        display: flex;
+        align-self: center;
         gap: $gap-large;
 
         .featuredButtonsSpace {
@@ -188,7 +193,7 @@ main {
 
 .advertising {
     text-align: center;
-    font-size: $font-size-xlarge;
+    font-size: $font-size-large;
     font-weight: $bold-font-weight;
     padding: 35px 0 110px;
     color: $color-white;

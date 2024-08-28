@@ -3,7 +3,7 @@
 @import '../utilities/extend';
 
 .promotion {
-  padding: $gap-small 0 $gap-medium 0;
+  padding: 5px 0px 2px 0;
   text-align: center;
   background-color: $color-lime;
   font-size: $font-size-small;
@@ -15,12 +15,12 @@ header {
   background-color: $background-color-dark;
 
   .imagesHeader {
-    @include flex-center(row, flex-end, flex-start);
+    @include flex-center(row, flex-end);
 
     .imagesHeaderLeft {
-      @include flex-center(row, flex-end, flex-start);
+      display: flex;
       width: 100%;
-      padding-bottom: $gap-medium;
+      padding-bottom: $gap-small;
 
       .item1 {
         width: $image-width-left;
@@ -30,7 +30,8 @@ header {
     }
 
     .imagesHeaderRight {
-      @include flex-center(row, flex-end, flex-start);
+      display: flex;
+      justify-content: end;
       width: $image-width-right;
       height: $image-height;
       padding-right: $gap-medium;
@@ -39,7 +40,8 @@ header {
   }
 
   .headerLink {
-    @include flex-center(row, flex-end, flex-start);
+    display: flex;
+    align-items: flex-end;
     text-decoration: $border-none;
     font-size: 12px;
 
@@ -57,35 +59,37 @@ nav {
   z-index: 1000;
 
   .menuNavContainer {
-    @include flex-center(row, flex-start, flex-start);
+    display: flex;
     background-color: $main-background-color;
     width: 100%;
 
     .menuNav {
-      @include flex-center(row, flex-start, space-between);
+      display: flex;
       gap: $gap-large;
-      padding: $gap-medium 100px 0 $gap-small;
+      padding: $gap-small 100px 0px 20px;
       list-style-type: $border-none;
       color: $color-white;
-      font-size: $font-size-large;
+      font-size: $font-size-small;
       width: 100%;
       letter-spacing: $letter-spacing;
     }
 
     .navForm {
-      @include flex-center(row, flex-end, flex-start);
+      display: flex;
+      justify-content: flex-end;
       width: 50%;
 
       .navFormInput {
         width: 94%;
         color: $color-white;
         font-weight: $bold-font-weight;
-        font-size: $font-size-large;
+        font-size: $font-size-small;
         background-color: $background-color-dark;
         border: $border-none;
         outline: $border-none;
         padding-left: $nav-form-padding-left;
         text-transform: capitalize;
+        padding-left: $gap-small;
       }
 
       .navFormButton {

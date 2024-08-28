@@ -725,7 +725,7 @@ footer {
     font-size: 2em;
 }
 
-.botInput:checked+.botText::before::after {
+.botInput:checked+.botText::before {
     content: '\2714';
     color: lime;
     font-size: 2em;

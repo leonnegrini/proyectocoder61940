@@ -2,6 +2,10 @@ main {
     background-color: $background-color-light;
 }
 
+.container-fluid {
+    padding-top: 7.5px;
+}
+
 .sideBar {
     background-color: $background-color-lime;
     color: $color-white;

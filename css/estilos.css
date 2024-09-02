@@ -233,6 +233,10 @@ main {
   background-color: #0d0d0d;
 }
 
+.container-fluid {
+  padding-top: 7.5px;
+}
+
 .sideBar {
   background-color: #14b814;
   color: white;

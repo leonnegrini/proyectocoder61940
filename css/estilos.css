@@ -645,20 +645,20 @@ main {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+  background-color: #0d0d0d;
 }
 .contactMidForm .formInputName,
 .contactMidForm .formInputEmail,
 .contactMidForm .formInputTel,
 .contactMidForm .formInputMsj {
   width: 100%;
-  background-color: #0d0d0d;
 }
 .contactMidForm .formInputBot {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 15px;
+  padding: 10px 30px;
   gap: 15px;
   font-size: 1.5em;
   text-transform: none;
@@ -666,18 +666,26 @@ main {
   background-color: #0d0d0d;
   margin-top: 10px;
   border-radius: 4px;
-  padding: 10px 30px;
 }
-.contactMidForm .botInput {
+.contactMidForm .formInputBot .botInput {
   display: none;
 }
-.contactMidForm .botInput + .botText {
+.contactMidForm .formInputBot .botInput:checked + .botText::before {
+  content: "✔";
+  background-color: #0d0d0d;
+  border: none;
+  color: lime;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 30px;
+}
+.contactMidForm .formInputBot .botText {
   display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
 }
-.contactMidForm .botInput + .botText::before {
+.contactMidForm .formInputBot .botText::before {
   content: "";
   display: flex;
   flex-direction: row;
@@ -692,21 +700,6 @@ main {
   background-color: #0d0d0d;
   transition: background-color 0.2s, border-color 0.2s;
 }
-.botInput:checked + .contactMidForm .botInput + .botText::before {
-  content: "✔";
-  background-color: #0d0d0d;
-  border: none;
-  color: lime;
-  font-size: 2em;
-}
-.botInput:checked + .contactMidForm .botInput + .botText::before::after {
-  content: "✔";
-  color: lime;
-  font-size: 2em;
-}
-.contactMidForm .botInput + .botText {
-  color: white;
-}
 .contactMidForm .formInputSendMsg {
   background-color: rgb(43, 47, 49);
   color: white;
@@ -719,7 +712,7 @@ main {
   transition: background-color 0.2s ease;
   cursor: not-allowed;
 }
-.contactMidForm input[type=checkbox]:checked ~ input[type=submit] {
+.contactMidForm input[type=checkbox]:checked ~ .formInputSendMsg {
   background-color: lime;
 }
 
@@ -934,13 +927,6 @@ footer {
   .contactMidForm {
     width: 100%;
     padding: 0 20px;
-  }
-  .formEmailTelContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0;
   }
 }
 @media (max-width: 600px) {

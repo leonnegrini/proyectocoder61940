@@ -74,6 +74,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+input[type=text] {
+  color: white;
+}
+
+textarea {
+  color: white;
+}
+
 .noMarginText {
   margin: 0;
 }

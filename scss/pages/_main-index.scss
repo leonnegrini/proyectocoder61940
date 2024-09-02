@@ -3,7 +3,7 @@ main {
 }
 
 .sideBar {
-    background-color: $color-lime;
+    background-color: $background-color-lime;
     color: $color-white;
 
     .sideBarTitle {
@@ -181,7 +181,7 @@ main {
     margin-top: $gap-small;
 
     .seeMore {
-        background-color: $color-lime;
+        background-color: $background-color-lime;
         padding: 20px 60px;
         color: $color-white;
         font-weight: $bold-font-weight;

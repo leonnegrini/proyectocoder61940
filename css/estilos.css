@@ -142,7 +142,7 @@ textarea {
 .promotion {
   padding: 5px 0px 2px 0;
   text-align: center;
-  background-color: lime;
+  background-color: #14b814;
   font-size: 1.5em;
   font-weight: bold;
   color: white;
@@ -234,7 +234,7 @@ main {
 }
 
 .sideBar {
-  background-color: lime;
+  background-color: #14b814;
   color: white;
 }
 .sideBar .sideBarTitle {
@@ -392,7 +392,7 @@ main {
   margin-top: 10px;
 }
 .seeMoreButton .seeMore {
-  background-color: lime;
+  background-color: #14b814;
   padding: 20px 60px;
   color: white;
   font-weight: bold;

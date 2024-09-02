@@ -52,7 +52,7 @@
   padding: 10px;
 }
 .productsContainer article .featuredTextContainer .featuredButtons .buttonsConfig {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: bold;
   background-color: #101010;
   border: none;
@@ -966,9 +966,6 @@ footer {
   }
   .preTextItem {
     flex: 1 1 100%;
-  }
-  .featuredTextcontainer .featuredButtons .featuredButtonsSpace .buttonsConfig {
-    font-size: 9px;
   }
   .noMarginText {
     display: none;

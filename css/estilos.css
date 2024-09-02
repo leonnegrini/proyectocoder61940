@@ -1,10 +1,61 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.footerContact .footerContactItems, .formControl {
+  width: 100%;
+}
+
+.productsContainer article .featuredTextContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #101010;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: solid lime;
+}
+.productsContainer article .featuredTextContainer .alignText {
+  align-self: center;
+}
+.productsContainer article .featuredTextContainer .featuredText {
+  font-size: 9px;
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.productsContainer article .featuredTextContainer .featuredPrecio {
+  color: lime;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+.productsContainer article .featuredTextContainer .featuredPrecio span {
+  color: #bababa;
+  font-style: italic;
+}
+.productsContainer article .featuredTextContainer .featuredPrecio2 {
+  color: lime;
+  font-weight: bold;
+  padding-top: 5px;
+  font-size: 1rem;
+}
+.productsContainer article .featuredTextContainer .featuredButtons {
+  display: flex;
+  align-self: center;
+  gap: 30px;
+}
+.productsContainer article .featuredTextContainer .featuredButtons .featuredButtonsSpace {
+  padding: 10px;
+}
+.productsContainer article .featuredTextContainer .featuredButtons .buttonsConfig {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #101010;
+  border: none;
+  color: white;
 }
 
 * {
@@ -91,26 +142,22 @@ body {
 header {
   background-color: black;
 }
-
 header .imagesHeader {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
 }
-
 header .imagesHeader .imagesHeaderLeft {
   display: flex;
   width: 100%;
   padding-bottom: 10px;
 }
-
 header .imagesHeader .imagesHeaderLeft .item1 {
   width: 200px;
   height: 100px;
   margin-left: 40px;
 }
-
 header .imagesHeader .imagesHeaderRight {
   display: flex;
   justify-content: end;
@@ -119,14 +166,12 @@ header .imagesHeader .imagesHeaderRight {
   padding-right: 40px;
   gap: 40px;
 }
-
 header .headerLink {
   display: flex;
   align-items: flex-end;
   text-decoration: none;
   font-size: 12px;
 }
-
 header .headerLink .textHeader {
   color: white;
   align-self: flex-end;
@@ -138,13 +183,11 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
 nav .menuNavContainer {
   display: flex;
   background-color: #080808;
   width: 100%;
 }
-
 nav .menuNavContainer .menuNav {
   display: flex;
   gap: 30px;
@@ -155,13 +198,11 @@ nav .menuNavContainer .menuNav {
   width: 100%;
   letter-spacing: 1px;
 }
-
 nav .menuNavContainer .navForm {
   display: flex;
   justify-content: flex-end;
   width: 50%;
 }
-
 nav .menuNavContainer .navForm .navFormInput {
   width: 94%;
   color: white;
@@ -174,7 +215,6 @@ nav .menuNavContainer .navForm .navFormInput {
   text-transform: capitalize;
   padding-left: 10px;
 }
-
 nav .menuNavContainer .navForm .navFormButton {
   background-color: black;
   border: none;
@@ -188,7 +228,6 @@ main {
   background-color: lime;
   color: white;
 }
-
 .sideBar .sideBarTitle {
   font-size: 1.5rem;
   padding: 15px 0;
@@ -196,7 +235,6 @@ main {
   font-weight: bold;
   border-bottom: 2px solid #0d0d0d;
 }
-
 .sideBar .sideBarList {
   display: flex;
   flex-direction: column;
@@ -212,18 +250,15 @@ main {
   min-height: 400px;
   height: 99%;
 }
-
 #carouselContainer.carousel .carousel-inner {
   width: 100%;
   position: absolute;
   inset: 0;
 }
-
 #carouselContainer.carousel .carousel-item {
   width: 100%;
   height: 100%;
 }
-
 #carouselContainer.carousel .carousel-item img {
   object-fit: cover;
 }
@@ -235,7 +270,6 @@ main {
   margin: 20px;
   border-bottom: solid lime;
 }
-
 .preTextContainer .preTextItem {
   display: flex;
   flex-direction: row;
@@ -245,13 +279,11 @@ main {
   font-family: monospace;
   color: white;
 }
-
 .preTextContainer .preTextItem .pre1 {
   font-size: 20px;
   color: white;
   font-weight: bold;
 }
-
 .preTextContainer .preTextItem .pre2 {
   font-size: 15px;
   color: white;
@@ -262,7 +294,6 @@ main {
   flex-direction: column;
   background-color: #0d0d0d;
 }
-
 .featured .featuredTitle {
   align-self: center;
   color: azure;
@@ -270,7 +301,6 @@ main {
   font-weight: bold;
   margin-top: 20px;
 }
-
 .featured .featuredItems {
   display: flex;
   flex-direction: row;
@@ -278,30 +308,25 @@ main {
   justify-content: center;
   margin: 30px 0 40px;
 }
-
 .featured .featuredItems .featuredRow {
   display: flex;
   gap: 30px;
 }
-
 .featured .featuredImagesBorder {
   border-radius: 3em 1em;
   border: solid azure;
   overflow: hidden;
 }
-
 .featured .featuredImagesBorder .featuredImages {
   width: 250px;
   height: 250px;
   transition: opacity 0.5s ease;
 }
-
 .featured .featuredImagesBorder .featuredImages:hover {
   transform: scale(1.1);
   opacity: 0.75;
   margin-bottom: 10px;
 }
-
 .featured .featuredTextContainer {
   display: flex;
   flex-direction: column;
@@ -310,46 +335,38 @@ main {
   border-top-right-radius: 20px;
   border-bottom: solid lime;
 }
-
 .featured .featuredTextContainer .featuredText {
   font-size: 9px;
   color: white;
   font-weight: bold;
   padding-top: 10px;
 }
-
 .featured .featuredTextContainer .featuredPrecio {
   color: lime;
   padding-top: 10px;
   font-size: 1.2rem;
 }
-
 .featured .featuredTextContainer .featuredPrecio span {
   color: #bababa;
   font-style: italic;
 }
-
 .featured .featuredTextContainer .featuredPrecio2 {
   color: lime;
   font-weight: bold;
   padding-top: 5px;
   font-size: 1rem;
 }
-
 .featured .alignText {
   align-self: center;
 }
-
 .featured .featuredButtons {
   display: flex;
   align-self: center;
   gap: 30px;
 }
-
 .featured .featuredButtons .featuredButtonsSpace {
   padding: 10px;
 }
-
 .featured .featuredButtons .buttonsConfig {
   font-size: 12px;
   font-weight: bold;
@@ -362,7 +379,6 @@ main {
   text-align: center;
   margin-top: 10px;
 }
-
 .seeMoreButton .seeMore {
   background-color: lime;
   padding: 20px 60px;
@@ -402,7 +418,6 @@ main {
   opacity: 0.5;
   border-radius: 4px;
 }
-
 .formControl:focus {
   border-color: #66afe9;
   outline: 0;
@@ -452,7 +467,6 @@ main {
   gap: 3rem;
   padding: 100px 0px 120px;
 }
-
 .productsContainer article .productsImages {
   width: 250px;
   height: 250px;
@@ -465,63 +479,6 @@ main {
   border: solid azure;
   transition: opacity 0.5s ease-in-out ease;
 }
-
-.productsContainer article .featuredTextContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #101010;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom: solid lime;
-}
-
-.productsContainer article .featuredTextContainer .alignText {
-  align-self: center;
-}
-
-.productsContainer article .featuredTextContainer .featuredText {
-  font-size: 9px;
-  color: white;
-  font-weight: bold;
-  padding-top: 10px;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio {
-  color: lime;
-  padding-top: 10px;
-  font-size: 1.2rem;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio span {
-  color: #bababa;
-  font-style: italic;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio2 {
-  color: lime;
-  font-weight: bold;
-  padding-top: 5px;
-  font-size: 1rem;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons {
-  display: flex;
-  align-self: center;
-  gap: 30px;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons .featuredButtonsSpace {
-  padding: 10px;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons .buttonsConfig {
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #101010;
-  border: none;
-  color: white;
-}
-
 .textTop {
   font-size: 3rem;
 }
@@ -542,7 +499,6 @@ main {
   opacity: 0.5;
   border-radius: 4px;
 }
-
 .formControl:focus {
   border-color: #66afe9;
   outline: 0;
@@ -592,7 +548,6 @@ main {
   gap: 3rem;
   padding: 100px 0px 120px;
 }
-
 .productsContainer article .productsImages {
   width: 250px;
   height: 250px;
@@ -605,63 +560,6 @@ main {
   border: solid azure;
   transition: opacity 0.5s ease-in-out ease;
 }
-
-.productsContainer article .featuredTextContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #101010;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom: solid lime;
-}
-
-.productsContainer article .featuredTextContainer .alignText {
-  align-self: center;
-}
-
-.productsContainer article .featuredTextContainer .featuredText {
-  font-size: 9px;
-  color: white;
-  font-weight: bold;
-  padding-top: 10px;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio {
-  color: lime;
-  padding-top: 10px;
-  font-size: 1.2rem;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio span {
-  color: #bababa;
-  font-style: italic;
-}
-
-.productsContainer article .featuredTextContainer .featuredPrecio2 {
-  color: lime;
-  font-weight: bold;
-  padding-top: 5px;
-  font-size: 1rem;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons {
-  display: flex;
-  align-self: center;
-  gap: 30px;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons .featuredButtonsSpace {
-  padding: 10px;
-}
-
-.productsContainer article .featuredTextContainer .featuredButtons .buttonsConfig {
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #101010;
-  border: none;
-  color: white;
-}
-
 .contactTop {
   color: white;
 }
@@ -728,7 +626,6 @@ main {
   max-width: 600px;
   box-sizing: border-box;
 }
-
 .contactMidForm input:not(.formInputSendMsg),
 .contactMidForm textarea {
   margin: 10px 0;
@@ -737,7 +634,6 @@ main {
   border-radius: 4px;
   font-size: 1em;
 }
-
 .contactMidForm .formInputName,
 .contactMidForm .formInputEmail,
 .contactMidForm .formInputTel,
@@ -745,7 +641,6 @@ main {
   width: 100%;
   background-color: #0d0d0d;
 }
-
 .contactMidForm .formInputBot {
   display: flex;
   flex-direction: column;
@@ -761,19 +656,16 @@ main {
   border-radius: 4px;
   padding: 10px 30px;
 }
-
 .contactMidForm .botInput {
   display: none;
 }
-
-.contactMidForm .botInput+.botText {
+.contactMidForm .botInput + .botText {
   display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
 }
-
-.contactMidForm .botInput+.botText::before {
+.contactMidForm .botInput + .botText::before {
   content: "";
   display: flex;
   flex-direction: row;
@@ -788,25 +680,21 @@ main {
   background-color: #0d0d0d;
   transition: background-color 0.2s, border-color 0.2s;
 }
-
-.botInput:checked+.contactMidForm .botInput+.botText::before {
+.botInput:checked + .contactMidForm .botInput + .botText::before {
   content: "✔";
   background-color: #0d0d0d;
   border: none;
   color: lime;
   font-size: 2em;
 }
-
-.botInput:checked+.contactMidForm .botInput+.botText::before::after {
+.botInput:checked + .contactMidForm .botInput + .botText::before::after {
   content: "✔";
   color: lime;
   font-size: 2em;
 }
-
-.contactMidForm .botInput+.botText {
+.contactMidForm .botInput + .botText {
   color: white;
 }
-
 .contactMidForm .formInputSendMsg {
   background-color: rgb(43, 47, 49);
   color: white;
@@ -819,8 +707,7 @@ main {
   transition: background-color 0.2s ease;
   cursor: not-allowed;
 }
-
-.contactMidForm input[type=checkbox]:checked~input[type=submit] {
+.contactMidForm input[type=checkbox]:checked ~ input[type=submit] {
   background-color: lime;
 }
 
@@ -911,7 +798,6 @@ footer {
   flex-direction: column;
   margin-top: 20px;
 }
-
 .footerContact .footerContactItems {
   display: flex;
   align-items: center;
@@ -929,7 +815,6 @@ footer {
   align-self: flex-start;
   margin-top: 20px;
 }
-
 .footerSocials .iconsSpacecontainer {
   display: flex;
   gap: 15px;
@@ -938,14 +823,12 @@ footer {
 .footerFormContainer {
   margin-top: 5px;
 }
-
 .footerFormContainer .footerFormItems {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-top: 10px;
 }
-
 .footerFormContainer .footerInputEmail {
   background-color: #0d0d0d;
   border: 1px solid #ccc;
@@ -957,7 +840,6 @@ footer {
   color: white;
   text-transform: capitalize;
 }
-
 .footerFormContainer .footerSubmitEmail {
   background-color: rgb(43, 47, 49);
   color: white;
@@ -968,7 +850,6 @@ footer {
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
-
 .footerFormContainer .footerSubmitEmail:hover {
   background-color: lime;
 }
@@ -982,27 +863,22 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .productsContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 900px) {
   .imagesHeader {
     justify-content: space-around;
   }
-
   .menuNavContainer {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .menuNav li {
     margin-right: 0;
     margin-bottom: 10px;
   }
-
   .navForm {
     margin-top: 10px;
     width: 100%;
@@ -1011,50 +887,40 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-
   .navFormInput {
     flex: 1;
   }
-
   .navFormButton {
     width: auto;
     margin-top: 0;
   }
-
   .mainSection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-
   .mainContainer {
     display: block;
   }
-
   .productsAside {
     display: none;
   }
-
   .productsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .contactGrid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "topContainer topContainer" "midContainer midContainer" "bottomContainer bottomContainer";
   }
-
   .responsiveRowColumn {
     flex-direction: column;
   }
-
   .contactMidForm {
     width: 100%;
     padding: 0 20px;
   }
-
   .formEmailTelContainer {
     display: flex;
     flex-direction: column;
@@ -1063,86 +929,70 @@ footer {
     gap: 0;
   }
 }
-
 @media (max-width: 600px) {
   .menuNav {
     flex-direction: column;
   }
-
   .promotion h1 {
     font-size: 14px;
   }
-
   .headerLink p {
     display: none;
   }
-
   .menuNavContainer {
     padding: 10px;
   }
-
   .menuNav a {
     font-size: 14px;
   }
-
   .navFormInput {
     font-size: 14px;
   }
-
   .navFormButton {
     font-size: 1.4rem;
   }
-
   .sideBar {
     display: none;
   }
-
   .preTextContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-
   .preTextItem {
     flex: 1 1 100%;
   }
-
   .noMarginText {
     display: none;
   }
-
   .iconsSpacecontainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-
   .displayNoneFooter {
     display: none;
   }
-
   .footerTextResponsive {
     font-size: 10px;
   }
-
+  .footerFormContainer {
+    display: none;
+  }
   .contactTopFlex {
     padding: 0 10px;
   }
-
   .contactH3 {
     font-size: 1.2em;
   }
-
   .contactH4 {
     font-size: 10px;
   }
-
   .contactMidForm {
     padding: 10px 0;
   }
-
   .formInputBot {
     padding: 10px 5px;
   }

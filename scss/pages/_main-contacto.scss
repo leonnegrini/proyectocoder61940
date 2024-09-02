@@ -82,7 +82,7 @@
 
     .formInputBot {
         @include flex-center(column, center, center);
-        padding: $gap-small $gap-large; 
+        padding: 20px 15px; 
         gap: 15px;
         font-size: $font-size-small;
         text-transform: none;

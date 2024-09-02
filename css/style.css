@@ -1003,6 +1003,10 @@ input[type="checkbox"]:checked~input[type="submit"] {
         font-size: 10px;
     }
 
+    .footerFormContainer {
+        display: none;
+    }
+
     /* Productos y Accesorios */
 
     /* Contacto */

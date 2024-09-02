@@ -483,9 +483,14 @@ main {
   gap: 3rem;
   padding: 100px 0px 120px;
 }
+.productsContainer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .productsContainer article .productsImages {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -564,9 +569,14 @@ main {
   gap: 3rem;
   padding: 100px 0px 120px;
 }
+.productsContainer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .productsContainer article .productsImages {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;

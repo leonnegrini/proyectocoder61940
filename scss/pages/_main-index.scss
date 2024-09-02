@@ -123,6 +123,10 @@ main {
         border-top-right-radius: 20px;
         border-bottom: solid $color-lime;
 
+        .alignText {
+            text-align: center;
+        }
+
         .featuredText {
             font-size: 9px;
             color: $color-white;

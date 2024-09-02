@@ -20,6 +20,7 @@
 }
 .productsContainer article .featuredTextContainer .alignText {
   align-self: center;
+  text-align: center;
 }
 .productsContainer article .featuredTextContainer .featuredText {
   font-size: 9px;
@@ -334,6 +335,9 @@ main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom: solid lime;
+}
+.featured .featuredTextContainer .alignText {
+  text-align: center;
 }
 .featured .featuredTextContainer .featuredText {
   font-size: 9px;
@@ -962,6 +966,9 @@ footer {
   }
   .preTextItem {
     flex: 1 1 100%;
+  }
+  .featuredTextcontainer .featuredButtons .featuredButtonsSpace .buttonsConfig {
+    font-size: 9px;
   }
   .noMarginText {
     display: none;

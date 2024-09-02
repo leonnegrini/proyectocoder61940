@@ -981,6 +981,9 @@ footer {
   .footerFormContainer {
     display: none;
   }
+  .footerSocials .iconsSpacecontainer {
+    gap: 0;
+  }
   .contactTopFlex {
     padding: 0 10px;
   }

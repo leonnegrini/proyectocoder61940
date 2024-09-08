@@ -96,10 +96,6 @@
 @media (max-width: 600px) {
 
     // Header
-    .menuNav {
-        flex-direction: column;
-    }
-
     .promotion h1 {
         font-size: 14px;
     }
@@ -109,19 +105,7 @@
     }
 
     .menuNavContainer {
-        padding: $gap-small;
-    }
-
-    .menuNav a {
-        font-size: 14px;
-    }
-
-    .navFormInput {
-        font-size: 14px;
-    }
-
-    .navFormButton {
-        font-size: 1.4rem;
+        display: none !important;
     }
 
     // Main

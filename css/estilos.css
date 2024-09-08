@@ -943,9 +943,6 @@ footer {
   }
 }
 @media (max-width: 600px) {
-  .menuNav {
-    flex-direction: column;
-  }
   .promotion h1 {
     font-size: 14px;
   }
@@ -953,16 +950,7 @@ footer {
     display: none;
   }
   .menuNavContainer {
-    padding: 10px;
-  }
-  .menuNav a {
-    font-size: 14px;
-  }
-  .navFormInput {
-    font-size: 14px;
-  }
-  .navFormButton {
-    font-size: 1.4rem;
+    display: none !important;
   }
   .sideBar {
     display: none;

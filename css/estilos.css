@@ -6,59 +6,6 @@
   box-sizing: border-box;
 }
 
-.footerContact .footerContactItems, .formControl {
-  width: 100%;
-}
-
-.productsContainer article .featuredTextContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #101010;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom: solid lime;
-}
-.productsContainer article .featuredTextContainer .alignText {
-  align-self: center;
-  text-align: center;
-}
-.productsContainer article .featuredTextContainer .featuredText {
-  font-size: 9px;
-  color: white;
-  font-weight: bold;
-  padding-top: 10px;
-}
-.productsContainer article .featuredTextContainer .featuredPrecio {
-  color: lime;
-  padding-top: 10px;
-  font-size: 1.2rem;
-}
-.productsContainer article .featuredTextContainer .featuredPrecio span {
-  color: #bababa;
-  font-style: italic;
-}
-.productsContainer article .featuredTextContainer .featuredPrecio2 {
-  color: lime;
-  font-weight: bold;
-  padding-top: 5px;
-  font-size: 1rem;
-}
-.productsContainer article .featuredTextContainer .featuredButtons {
-  display: flex;
-  align-self: center;
-  gap: 30px;
-}
-.productsContainer article .featuredTextContainer .featuredButtons .featuredButtonsSpace {
-  padding: 10px;
-}
-.productsContainer article .featuredTextContainer .featuredButtons .buttonsConfig {
-  font-size: 9px;
-  font-weight: bold;
-  background-color: #101010;
-  border: none;
-  color: white;
-}
-
 * {
   margin: 0;
   padding: 0;
